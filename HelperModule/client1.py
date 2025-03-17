@@ -65,7 +65,7 @@ def send_file_SnW(filename, sock, server_address):
                             ack_received = True
                             mytimer.stop()
                         else:
-                            print("Client: Incorrect ACK received, retrying...")
+                            print("Client: Incorrect ACK received")
                     except BlockingIOError:
                         continue
 
